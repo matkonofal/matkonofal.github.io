@@ -1,1 +1,127 @@
-Hello World
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <title>Page Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .test2{
+        color: hsl(277, 64%, 61%);
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+
+        background-color: hsl(233, 47%, 7%);
+
+        display: grid;
+        grid-template-columns: repeat(11, 135px);
+        grid-template-rows: repeat(10, 72px);
+    }
+
+    .container div{
+        padding: 25px;
+    }
+
+    .cardcolor{
+        background-color: hsl(244, 38%, 16%);
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 9;
+    }
+    .cardcolor2{
+        background: -webkit-linear-gradient(rgba(79, 10, 124, 0.65), rgba(79, 10, 124, 0.65)
+        ), url("image-header-desktop.jpg");
+
+        grid-column-start: 6;
+        grid-column-end: 10;
+        grid-row-start: 3;
+        grid-row-end: 9;
+    }
+    .header{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        font-size: 35px;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+    }
+
+    .desc{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 8;
+
+        font-size: 15px;
+        text-align: left;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+
+    .stat{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 8;
+
+        text-align: center;
+
+        font-size: 20px;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+    }
+
+    .stat2{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 8;
+
+        text-align: center;
+
+        font-size: 20px;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+    }
+    .stat3{
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 8;
+
+        text-align: center;
+
+        font-size: 20px;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+    }
+
+</style>
+<body>
+
+<div class="container">
+    <div class="cardcolor">
+        <div class="header"><b>Get <span class="test2">insight</span> that help
+            <br>your business grow.</b></div>
+        <div class="desc"><p>Discover the benefits of data analytics and make
+            <br>better decisions regarding revenue, customer <br> experience,
+            and overall efficiency.</p></div>
+    </div>
+    <div class="stat"><b>10K+</b><br>Companies</div>
+    <div class="stat2"><b>314</b><br>Templates</div>
+    <div class="stat3"><b>12M+</b><br>Queries</div>
+    <div class="cardcolor2"></div>
+</div>
+
+
+
+</body>
+</html>
